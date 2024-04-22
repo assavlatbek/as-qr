@@ -4,6 +4,11 @@ const hexC = document.querySelector(".hex");
 const noti = document.querySelector(".noti");
 const rgb = document.querySelector(".rgb");
 const apply = document.querySelector(".apply");
+const tale = window.Telegram.WebApp
+
+window.onload = function() {
+  tale.ready();
+}
 
 function hexToRgb() {
   const bigint = parseInt(color_picker.value.slice(1), 16);
